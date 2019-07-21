@@ -9,7 +9,7 @@ handler.setFormatter(colorlog.ColoredFormatter('%(log_color)s%(levelname)s:%(nam
 logger = colorlog.getLogger('task')
 logger.addHandler(handler)
 logger.setLevel('DEBUG')
-
+print
 dotenv.load_dotenv('.env')
 
 remote_prod_dir = os.getenv('REMOTE_PROD_DIR')
